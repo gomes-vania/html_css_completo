@@ -4,13 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulários</title>
+  <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
-  <h1>Formulário</h1>
-  <div>
-    <label>Nome</label>
-    <input type="text"/>
-  </div>
-  
+  <h1>Formulário HTML</h1>
+  <!-- 1 - Primeiro forumulário -->
+  <!-- 2 - Atributos do formulário -->
+  <form action="register.php" method="POST">
+    <div>
+      <label>Nome</label>
+      <input type="text"/>
+    </div>
+
+    <!-- 3 - Atributo name do input -->
+    <div>
+      <label>Idade</label>
+      <input type="number" name="age"/>
+    </div>
+
+    <!-- 4 - Atributo for da label deve ser igual ao value do atributo name do input-->
+    <div>
+      <label for="age">Idade</label>
+      <input type="number" name="age"/>
+    </div>
+
+    <!-- 6 - Atributo Select -->
+    <div>
+      <label for="job">Selecione a sua profissão</label>
+      <select name="job">
+        <option value="programador">Programador</option>
+        <option value="tester">Tester/QA</option>
+        <option value="develop">Develop</option>
+      </select>
+    </div>
+
+    <!-- 7 - Atributo Selected -->
+    <div>
+      <label for="contract">Você leu os termos do contrato?</label>
+      <select name="contract">
+        <option value="sim">Sim</option>
+        <option value="nao" selected>Não</option>
+      </select>
+    </div>
+
+    <!-- 8 - Múltiplas opções -->
+    <div>
+      <label for="itens">Selecione os itens desejados</label>
+      <select name="itens" multiple>
+        <option value="pera">Pera</option>
+        <option value="feijao">Feijão</option>
+        <option value="arroz">Arroz</option>
+        <option value="milho">Milho</option>
+      </select>
+    </div>
+
+    <!-- 9 - Textarea -->
+    <div>
+      <label for="coment">Diga nos o que você achou deste texto</label>
+      <textarea name="coment"></textarea>
+    </div>
+
+    <!-- 5 - Atributo para enviar os dados do formulário -->
+    <input type="submit" value="Enviar"/>
+  </form>
 </body>
 </html>
