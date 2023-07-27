@@ -1,0 +1,10 @@
+body {
+  margin-bottom: 500px;
+}
+
+/* 1 - Flex */
+.flex {
+  display: flex;
+  background-color: aqua;
+  margin-bottom: 20px;
+}
